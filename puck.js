@@ -1,6 +1,6 @@
 require('dotenv').config();
 const fs = require('fs');
-const { Client, Collection, GatewayIntentBits, Partials, Options } = require('discord.js');
+const { Client, Collection, GatewayIntentBits, Partials, Options, EmbedBuilder } = require('discord.js');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 
@@ -125,4 +125,15 @@ const rest = new REST({ version: '9' }).setToken(process.env.TOKEN);
 	}
 })();
 
+client.on('messageCreate', (message) => {
+	if (message.content === ".keymap" || message.content === ".keymap --game" || message.content === ".keymap --game genshin impact" || message.content === ".keymapping") {
+		message.reply({embeds: [new EmbedBuilder()
+			.setAuthor({name: "Invalid Command"})
+			.setDescription(`The \`.keymap\` command has been deprecated in favour of slash commands! Please use \`/keymap\` command.`)
+			.setTimestamp()
+			.setColor('#cf3838')
+		]
+		})
+	}
+})
 client.login(process.env.TOKEN);
