@@ -1,8 +1,9 @@
 require('dotenv').config();
 const fs = require('fs');
-const { Client, Collection, GatewayIntentBits, Partials, Options, EmbedBuilder } = require('discord.js');
+const { Client, Collection, GatewayIntentBits, Partials, Options, EmbedBuilder, AttachmentBuilder } = require('discord.js');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
+const usecommand = new AttachmentBuilder('./resources/usecommands.gif');
 
 const client = new Client({
 	intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions, GatewayIntentBits.GuildPresences, GatewayIntentBits.MessageContent],
@@ -125,15 +126,27 @@ const rest = new REST({ version: '9' }).setToken(process.env.TOKEN);
 	}
 })();
 
+	const prefix = "."
+
 client.on('messageCreate', (message) => {
-	if (message.content === ".keymap" || message.content === ".keymap --game" || message.content === ".keymap --game genshin impact" || message.content === ".keymapping") {
-		message.reply({embeds: [new EmbedBuilder()
-			.setAuthor({name: "Invalid Command"})
-			.setDescription(`The \`.keymap\` command has been deprecated in favour of slash commands! Please use \`/keymap\` command.`)
-			.setTimestamp()
-			.setColor('#cf3838')
-		]
-		})
-	}
+
+
+	const args = message.content.trim().split(/ +/g);
+	const cmd = args[0].slice(prefix.length).toLowerCase();
+
+	if (cmd === 'keymap' || cmd === 'keymapping') {
+		if (args[0]) {
+			message.reply({embeds: [new EmbedBuilder()
+				.setAuthor({name: "Invalid Command"})
+				.setDescription(`The \`.keymap\` command has been deprecated in favour of slash commands! Please use \`/keymap\` command.`)
+				.setImage('https://cdn.discordapp.com/attachments/818783506716557316/1213510301253767250/useKeymap.gif?ex=65f5bc89&is=65e34789&hm=3ecf97bf13691b0c554309e45f17c034b1999fd629e4db0991f2499cc99bd83e&')
+				.setTimestamp()
+				.setColor('#cf3838')
+			]
+			})
+		}
+	
+		// command code
+	  }
 })
 client.login(process.env.TOKEN);

@@ -13,7 +13,14 @@ module.exports = {
 		let embed = new EmbedBuilder();
 
 		if (game) {
-			embed.setAuthor({name:`${game} Keymap`, iconURL: 'https://playcover.io/PlayCover-Square.png'}).setDescription(`## [Click here to download keymapping for ${game}](https://${require('../../../resources/keymaps.json').find(keymap => keymap.name == game).url})`).addFields({ name: 'Keymapping Issues', value: 'If you are facing keymapping issues, please make sure you are on macOS 13.1 or above. If so, please make a support post in <#1019859452352020540>', inline: true },{ name: 'How to import keymapping', value: `1. In PlayCover, \`right click/control click\` ${game} \n2. Select \`Import Keymapping\` from the drop down menu\n3. Navigate the keymap you just downloaded and press \`Open\``, inline: true }).setTimestamp().setColor(`#78D7A3`);
+			embed
+			.setAuthor({name:`${game} Keymap`, iconURL: 'https://playcover.io/PlayCover-Square.png'})
+			.setDescription(`## [Click here to download keymapping for ${game}](https://${require('../../../resources/keymaps.json')
+				.find(keymap => keymap.name == game).url})`)
+				.addFields({ name: 'Encountering a problem?', value: 'If you are facing keymapping issues, please make sure you are on macOS 13.1 or above. If so, please make a support post in <#1019859452352020540>', inline: true },
+							{name: 'How to import keymapping', value: `1. In PlayCover, \`right click/control click\` ${game} \n2. Select \`Import Keymapping\` from the drop down menu\n3. Navigate the keymap you just downloaded and press \`Open\`.\nFor further information, please read the [docs](https://docs.playcover.io/keymapping/using_making_keymaps)`, inline: true })
+				.setTimestamp()
+				.setColor(`#78D7A3`);
 		} else {
 			embed.setTitle('Keymapping FAQ').setDescription(`
                 ➤ \`Command (CMD) + K\` — Toggle keymapping mode

@@ -1,6 +1,4 @@
 const { EmbedBuilder, SlashCommandBuilder, AttachmentBuilder } = require('discord.js');
-const stableAndPre = new AttachmentBuilder('./resources/stable.png');
-const nightly = new AttachmentBuilder('./resources/nightly.png');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -46,7 +44,7 @@ module.exports = {
 						{ name: 'PlayCover Damaged and Can\’t Be Opened',
 						 value: `
 						 To fix this error:
-						 1. Press \`Command + Space\` on your keyboard\n2. Type \`Terminal\` and press return\n3. Type \`xattr -c /Applications/PlayCover.app\``
+						 1. Press \`Command + Space\` on your keyboard\n2. Type \`Terminal\` and press return\n3. Enter the following command: \`xattr -c /Applications/PlayCover.app\``
 						 , inline: true },
 					).setTimestamp().setColor(color)
 				],
