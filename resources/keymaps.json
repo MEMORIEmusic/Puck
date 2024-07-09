@@ -8,8 +8,8 @@
         "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.HoYoverse.hkrpgoversea"
     },
         {
-        "name": "Zenless Zone Zero"
-        "url": "download1591.mediafire.com/tp6fha0waiwgLh07TlVKhLVmFJLOwLUlrsxxrewUjnLVY1gMIgG8NNVhwHH0fu1cm0EkaY1NP5qjW9Bw4hRGF6anxDorEURY3SbP4OK0Ee3M1eyusl8WppsnCTQvpYk2mvrh4HwhndZJqlGqqtGjFIRJhHVsDmSN52Mw1K6qIwPK9g/d8urwmhl6ex3wa4/Zenless+Zone+Zero.playmap"
+        "name": "Zenless Zone Zero",
+        "url": "/github.com/PlayCover/keymaps/tree/master/keymapping/com.HoYoverse.Nap"
     },
     {
         "name": "Zenless Zone Zero",
@@ -21,15 +21,6 @@
     },
     {
         "name": "Punishing: Gray Raven",
-<<<<<<< Updated upstream
-        "url": "download1648.mediafire.com/170vibqib7qgvEgnxiQXCrE9xvjFPVcMAxwDeD0-23xmxlWj2DNy4sS_B0Dqq10-GQ_6z0kNelQyxMW2GycgmViAE_wwmHx-wL7WvqaEkFVRA4hP2xAK3hKTrQb5sVUv9kbaTDRbCvquDpZqF4F4xFCsum9B1ZmG-T9rtJvIpE63Zg/5wvt0ga6bv6epdq/Punishing_Gray_Raven.playmap"
-    },
-     {
-        "name": "Wuthering Waves",
-        "url": "download1582.mediafire.com/ytwcsixpbdmgWqO44RxtCas712o_1MCx0yXEeF0kx16fuAyrozSxkb1yf-789T_XU168bYLS0BnkvQPsk9-PxQpXjnEuVcd15qOKxSdJMG_YnBtS_Sia6zaNxFwqhErFgIkN-G5EjBzQhzGj3Z2_ZNfYC5KOgMI0dMY4fPvUjrrvFg/o2xt7fdwv0372fp/wuthering+waves.playmap"
-    },
-]
-=======
         "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.kurogame.punishing.grayraven.en"
     },
 
@@ -47,4 +38,3 @@
     }
 
 ]
->>>>>>> Stashed changes
