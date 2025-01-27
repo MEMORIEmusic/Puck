@@ -21,10 +21,7 @@ module.exports = {
 
     if (game) {
       embed
-        .setAuthor({
-          name: `${game} Keymap`,
-          iconURL: "https://playcover.io/PlayCover-Square.png",
-        })
+        .setThumbnail("https://playcover.io/PlayCover-Square.png")
         .setDescription(
           `## [Click here to download keymapping for ${game}](https://${
             require("../../../resources/keymaps.json").find(
@@ -50,6 +47,10 @@ module.exports = {
           value: "# Here's how to download the keymaps:",
         })
         .setImage("https://i.imgur.com/QsOX6gl.gif")
+        .setFooter({
+          text: `Keymap for ${game}`,
+          iconURL: `https://i.imgur.com/TS5tXcv.png`,
+        })
         .setTimestamp()
         .setColor(`#78D7A3`);
     } else {
