@@ -1,40 +1,38 @@
 [
-    {
-        "name": "Genshin Impact",
-        "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.miHoYo.GenshinImpact"
-    },
-    {
-        "name": "Honkai: Star Rail",
-        "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.HoYoverse.hkrpgoversea"
-    },
-        {
-        "name": "Zenless Zone Zero",
-        "url": "/github.com/PlayCover/keymaps/tree/master/keymapping/com.HoYoverse.Nap"
-    },
-    {
-        "name": "Zenless Zone Zero",
-        "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.HoYoverse.Nap"
-    },
-    {
-        "name": "Wuthering Waves",
-        "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.kurogame.wutheringwaves.global"
-    },
-    {
-        "name": "Punishing: Gray Raven",
-        "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.kurogame.punishing.grayraven.en"
-    },
-
-    {
-        "name": "Diablo Immortal",
-        "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.blizzard.diablo.immortal"
-    },
-    {
-        "name": "League of Legends: Wild Rift",
-        "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.riotgames.league.wildrift"
-    },
-    {
-        "name": "Rocket League: Side Swipe",
-        "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.psyonixllc.mesa"
-    }
-
+  {
+    "name": "Genshin Impact",
+    "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.miHoYo.GenshinImpact"
+  },
+  {
+    "name": "Honkai: Star Rail",
+    "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.HoYoverse.hkrpgoversea"
+  },
+  {
+    "name": "Zenless Zone Zero",
+    "url": "/github.com/PlayCover/keymaps/tree/master/keymapping/com.HoYoverse.Nap"
+  },
+  {
+    "name": "Wuthering Waves",
+    "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.kurogame.wutheringwaves.global"
+  },
+  {
+    "name": "Punishing: Gray Raven",
+    "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.kurogame.punishing.grayraven.en"
+  },
+  {
+    "name": "Diablo Immortal",
+    "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.blizzard.diablo.immortal"
+  },
+  {
+    "name": "League of Legends: Wild Rift",
+    "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.riotgames.league.wildrift"
+  },
+  {
+    "name": "Rocket League: Side Swipe",
+    "url": "github.com/PlayCover/keymaps/tree/master/keymapping/com.psyonixllc.mesa"
+  },
+  {
+    "name": "Umamusume: Pretty Derby",
+    "url": "github.com/PlayCover/keymaps/tree/master/keymapping/jp.co.cygames.umamusume"
+  }
 ]
