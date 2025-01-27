@@ -17,7 +17,7 @@
     "PlayCover",
     "Puck"
   ],
-  "author": "Roeegh <admin@roeegh.dev> (https://github.com/roeegh)",
+  "author": "PlayCover",
   "license": "GPL-3.0",
   "dependencies": {
     "@discordjs/rest": "^1.7.0",
